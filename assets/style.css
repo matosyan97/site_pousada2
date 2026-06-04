@@ -70,7 +70,7 @@ body {
    HERO BANNER
    ========================================= */
 .hero-image {
-    background: linear-gradient(135deg, rgba(142, 68, 173, 0.9), rgba(44, 62, 80, 0.9));
+    background-image: url('/assets/img/fachada.png'); /* Substitua pelo caminho da sua imagem */
     height: 100vh; /* Ocupa a tela toda */
     display: flex;
     align-items: center;
