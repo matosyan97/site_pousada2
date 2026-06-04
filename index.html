@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 3 - Landing Page Centralizada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Nível 1: Header minimalista e centralizado -->
+    <header class="header-centrado">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#inscricao">Inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Nível 2: Banner Hero com Imagem de Fundo (Simulada via CSS) -->
+        <section id="home" class="hero-image">
+            <div class="hero-text">
+                <h1>Uma Nova Experiência</h1>
+                <p>Descubra o que preparamos para você neste incrível layout.</p>
+                <a href="#inscricao" class="btn btn-outline">Começar Agora</a>
+            </div>
+        </section>
+
+        <!-- Nível 2: Seção Sobre Nós (Alternância de Layout) -->
+        <section id="sobre" class="container">
+            <h2 class="text-center">Por que escolher-nos?</h2>
+            <div class="flex-alternado">
+                <!-- Nível 3: Imagem + Texto -->
+                <article class="bloco-info">
+                    <div class="img-placeholder">Imagem A</div>
+                    <div class="texto-info">
+                        <h3>Qualidade Excepcional</h3>
+                        <p>Nossos serviços são prestados com a mais alta qualidade para garantir a sua satisfação.</p>
+                    </div>
+                </article>
+                <article class="bloco-info reverso">
+                    <div class="img-placeholder">Imagem B</div>
+                    <div class="texto-info">
+                        <h3>Atendimento Rápido</h3>
+                        <p>Nossa equipe está sempre pronta para ajudar você em todas as suas necessidades.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Nível 2: Seção de Inscrição (Formulário Centralizado) -->
+        <section id="inscricao" class="bg-light">
+            <div class="container text-center">
+                <h2>Garanta sua Vaga</h2>
+                <p>Preencha o formulário abaixo para participar do nosso evento exclusivo.</p>
+                
+                <div class="card card-form-centro">
+                    <form id="formInscricao">
+                        <div class="input-group">
+                            <input type="text" id="nomeParticipante" placeholder="Seu Nome Completo" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="emailParticipante" placeholder="Seu Melhor E-mail" required>
+                        </div>
+                        <div class="input-group checkbox-group">
+                            <input type="checkbox" id="termos" required>
+                            <label for="termos">Aceito os termos e condições</label>
+                        </div>
+                        <button type="submit" class="btn btn-block">Confirmar Inscrição</button>
+                    </form>
+                    <div id="msgInscricao" class="mensagem-oculta"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Nível 1: Footer -->
+    <footer class="footer-simples">
+        <p>Template 3 - Sistemas para Internet - IFSC</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

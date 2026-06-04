@@ -1,0 +1,235 @@
+/* Variáveis globais */
+:root {
+    --primary: #8e44ad;
+    --secondary: #2c3e50;
+    --light: #f9f9f9;
+    --dark: #333;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+/* =========================================
+   HEADER CENTRALIZADO
+   ========================================= */
+.header-centrado {
+    background-color: var(--white);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.header-centrado nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header-centrado nav ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.header-centrado nav ul li a:hover {
+    color: var(--primary);
+}
+
+/* =========================================
+   HERO BANNER
+   ========================================= */
+.hero-image {
+    background: linear-gradient(135deg, rgba(142, 68, 173, 0.9), rgba(44, 62, 80, 0.9));
+    height: 100vh; /* Ocupa a tela toda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #732d91;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--white);
+}
+
+.btn-outline:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* =========================================
+   FLEX ALTERNADO (SOBRE NÓS)
+   ========================================= */
+.flex-alternado {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bloco-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Classe para inverter a ordem da imagem e texto */
+.bloco-info.reverso {
+    flex-direction: row-reverse;
+}
+
+.img-placeholder {
+    flex: 1;
+    background-color: #ccc;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.texto-info {
+    flex: 1;
+}
+
+.texto-info h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* responsividade básica para o flex alternado */
+@media (max-width: 768px) {
+    .bloco-info, .bloco-info.reverso {
+        flex-direction: column;
+    }
+}
+
+/* =========================================
+   FORMULÁRIO CENTRALIZADO
+   ========================================= */
+#inscricao p {
+    margin-bottom: 40px;
+}
+
+.card-form-centro {
+    background-color: var(--white);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input[type="text"], .input-group input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.mensagem-oculta {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer-simples {
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+}
