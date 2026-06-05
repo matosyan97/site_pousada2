@@ -161,6 +161,19 @@ body {
     font-size: 1.5rem;
 }
 
+.img-placeholder1 {
+    background-image: url('/assets/img/living.jpg');
+    flex: 1;
+    background-color: #ccc;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 .texto-info {
     flex: 1;
 }
